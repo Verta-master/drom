@@ -1,0 +1,38 @@
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe__input {
+  width: 446px;
+  height: 35px;
+  padding-left: 50px;
+  padding-right: 15px;
+  font-size: 14px;
+  background-color: rgba(221, 221, 221, 0.5);
+  
+  &::placeholder {
+    font-style: italic;
+    color: #999999;
+    letter-spacing: 0.05em;
+    opacity: 1;
+  }
+}
+
+.subscribe__btn {
+  width: 35px;
+  height: 35px;
+  background-color: @blue;
+  background-image: url(../img/icon-mail.png);
+  background-repeat: no-repeat;
+  background-size: 19px 13px;
+  background-position: center;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: @accent;
+    .transition();
+  }
+}
