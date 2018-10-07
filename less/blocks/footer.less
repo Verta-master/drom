@@ -37,7 +37,7 @@
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 3px;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -68,6 +68,8 @@
 }
 
 .footer__contacts {
+  width: 33%;
+  
   address::before {
     width: 14px;
     height: 20px;
@@ -76,18 +78,24 @@
 }
 
 .footer__news {
+  width: 33%;
   text-align: right;
   
   .subscribe__input {
-    width: 330px;
+    width: 295px;
     padding-left: 25px;
     background-color: rgb(238, 238, 238);
   }
   .subscribe__btn {
     border: 1px solid rgb(238, 238, 238);
   }
+  .subscribe {
+    justify-content: flex-end;
+    margin-top: 17px;
+  }
 }
 
 .footer__social {
+  width: 33%;
   text-align: center;
 }
