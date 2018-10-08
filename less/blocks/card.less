@@ -1,5 +1,5 @@
 .card {
-  margin-bottom: 55px;
+  margin-bottom: 25px;
 }
 
 .card__wrap {
@@ -13,6 +13,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .card__info {
@@ -30,6 +36,7 @@
   
   .catalog__price {
     justify-content: space-between;
+    margin-bottom: 40px;
   }
   .catalog__newprice {
     font-size: 24px;
@@ -50,6 +57,9 @@
     width: 213px;
     height: 41px;
   }
+  .catalog__click {
+    margin-top: 40px;
+  }
 }
 
 .card__img {
@@ -65,13 +75,10 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 37px;
-  
-  img {
-    display: block;
-  }
 }
 
 .card__title {
+  margin-bottom: 23px;
   color: @blue;
   font-size: 14px;
   letter-spacing: 0.05em;

@@ -81,6 +81,22 @@
   .catalog--plate .catalog__item {
     margin-right: 0;
   }
+  .card__info,
+  .card__slider {
+    width: 50%;
+  }
+  .card__info {
+    padding-left: 15px;
+  }
+  .card__thumbs {
+    width: 20%;
+  }
+  .card__img {
+    width: 75%;
+  }
+  .tabs__name {
+    margin-right: 40px;
+  }
 }
 
 //--------------------------------------------
@@ -228,6 +244,21 @@
     margin-right: auto;
     max-width: 100%;
   }
+  .card__wrap {
+    display: block;
+  }
+  .card__slider {
+    width: 470px;
+    max-width: 100%;
+  }
+  .breadcrumbs {
+    margin-bottom: 40px;
+  }
+  .card__info {
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 //-----------------------------------------
@@ -306,5 +337,33 @@
       margin-left: 0;
       margin-top: 0;
     }
+  }
+  .card__slider {
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+  .card__thumbs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+  }
+  .card__icon {
+    width: 20%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+  .card__img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card__info .catalog__form {
+    max-width: 100%;
   }
 }
