@@ -74,7 +74,7 @@
     
     <div class="wrapper wrapper--columns">
       <div class="sidebar">
-        <p class="sidebar__title">каталог товаров</p>
+        <p class="sidebar__title sidebar__title--btn">каталог товаров</p>
         <form action="#" method="get" class="form">
           <select class="catalog__select">
             <option value="1">Матрасы</option>
@@ -336,6 +336,11 @@
       $('.content__plate').addClass('content__active');
       $('.catalog').removeClass('catalog--table');
     });
+    if (window.innerWidth < 766) {
+      $('.sidebar__title--btn').click(function() {
+        $('.form').slideToggle();
+      })
+    };
   </script>
 </body>
 </html>
