@@ -2192,7 +2192,7 @@ span.breadcrumbs__link {
   .wrapper--columns {
     display: block;
   }
-  .sidebar .form {
+  .form--sidebar {
     display: none;
     margin-top: 20px;
   }

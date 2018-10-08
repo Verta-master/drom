@@ -76,7 +76,7 @@
     <div class="wrapper wrapper--columns">
       <div class="sidebar">
         <p class="sidebar__title sidebar__title--btn">каталог товаров</p>
-        <form action="#" method="get" class="form">
+        <form action="#" method="get" class="form form--sidebar">
           <select class="catalog__select">
             <option value="1">Матрасы</option>
             <option value="2">Option 2</option>
@@ -361,7 +361,7 @@
     });
     if (window.innerWidth < 766) {
       $('.sidebar__title--btn').click(function() {
-        $('.form').slideToggle();
+        $('.form--sidebar').slideToggle();
       })
     };
   </script>
