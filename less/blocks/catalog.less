@@ -15,6 +15,12 @@
       }
     }
   }
+  
+  &--recent {
+    .title-h2 {
+      text-align: left;
+    }
+  }
 }
 
 .catalog__list {
@@ -52,13 +58,17 @@
   align-items: center;
 }
 
-.catalog__label {
+.catalog__labels {
   position: absolute;
   left: 0;
   top: 10px;
+}
+
+.catalog__label {
   width: 51px;
   height: 23px;
   margin: 0;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 23px;
   font-weight: 700;
@@ -176,6 +186,11 @@
   letter-spacing: 0.05em;
   background-color: rgb(238, 238, 238);
   .transition();
+  
+  &--card {
+    background-color: rgba(255,255,255,0);
+    border: 1px solid @blue;
+  }
   
   &:hover,
   &:active {

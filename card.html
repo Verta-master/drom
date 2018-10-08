@@ -5,6 +5,7 @@
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Drom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -128,7 +129,7 @@
               </div>
               <button type="submit" class="btn catalog__btn">Добавить в корзину</button>
             </div>
-            <a href="#" class="catalog__click">купить в один клик</a>
+            <a data-fancybox data-src="#call" href="javascript:;" class="catalog__click catalog__click--card">купить в один клик</a>
           </form>
         </div>
       </div>
@@ -155,7 +156,7 @@
       </div>
     </section>
     
-    <section class="catalog wrapper">
+    <section class="catalog catalog--recent wrapper">
       <p class="title-h2">С этим товаром также выбирают:</p>
       <ul class="catalog__list">
         <li class="catalog__item">
@@ -164,7 +165,9 @@
               <img src="img/img-2.jpg" alt="Название матраса" width="188" height="141">
             </a>
           </figure>
-          <p class="catalog__label catalog__label--new">new</p>
+          <div class="catalog__labels">
+            <p class="catalog__label catalog__label--new">new</p>
+          </div>
           <div class="catalog__info">
             <div class="catalog__text">
               <a href="#" class="catalog__title">Название матраса</a>
@@ -191,7 +194,7 @@
                 </div>
                 <button type="submit" class="btn catalog__btn">Добавить в корзину</button>
               </div>
-              <a href="#" class="catalog__click">купить в один клик</a>
+              <a data-fancybox data-src="#call" href="javascript:;" class="catalog__click">купить в один клик</a>
             </form>
           </div>
         </li>
@@ -201,7 +204,9 @@
               <img src="img/img-2.jpg" alt="Название матраса" width="188" height="141">
             </a>
           </figure>
-          <p class="catalog__label catalog__label--new">new</p>
+          <div class="catalog__labels">
+            <p class="catalog__label catalog__label--new">new</p>
+          </div>
           <div class="catalog__info">
             <div class="catalog__text">
               <a href="#" class="catalog__title">Название матраса</a>
@@ -228,7 +233,7 @@
                 </div>
                 <button type="submit" class="btn catalog__btn">Добавить в корзину</button>
               </div>
-              <a href="#" class="catalog__click">купить в один клик</a>
+              <a data-fancybox data-src="#call" href="javascript:;" class="catalog__click">купить в один клик</a>
             </form>
           </div>
         </li>
@@ -238,7 +243,9 @@
               <img src="img/img-2.jpg" alt="Название матраса" width="188" height="141">
             </a>
           </figure>
-          <p class="catalog__label catalog__label--new">new</p>
+          <div class="catalog__labels">
+            <p class="catalog__label catalog__label--new">new</p>
+          </div>
           <div class="catalog__info">
             <div class="catalog__text">
               <a href="#" class="catalog__title">Название матраса</a>
@@ -265,7 +272,7 @@
                 </div>
                 <button type="submit" class="btn catalog__btn">Добавить в корзину</button>
               </div>
-              <a href="#" class="catalog__click">купить в один клик</a>
+              <a data-fancybox data-src="#call" href="javascript:;" class="catalog__click">купить в один клик</a>
             </form>
           </div>
         </li>
@@ -275,7 +282,9 @@
               <img src="img/img-2.jpg" alt="Название матраса" width="188" height="141">
             </a>
           </figure>
-          <p class="catalog__label catalog__label--new">new</p>
+          <div class="catalog__labels">
+            <p class="catalog__label catalog__label--new">new</p>
+          </div>
           <div class="catalog__info">
             <div class="catalog__text">
               <a href="#" class="catalog__title">Название матраса</a>
@@ -302,7 +311,7 @@
                 </div>
                 <button type="submit" class="btn catalog__btn">Добавить в корзину</button>
               </div>
-              <a href="#" class="catalog__click">купить в один клик</a>
+              <a data-fancybox data-src="#call" href="javascript:;" class="catalog__click">купить в один клик</a>
             </form>
           </div>
         </li>
@@ -354,9 +363,23 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="title-h2">купить в один клик</p>
+    <form action="#" method="post" class="form">
+      <input type="text" class="form__input" placeholder="Имя" required>
+      <input type="tel" class="form__input" placeholder="Телефон" required>
+      <input type="checkbox" id="robot" class="form__checkbox" required>
+      <label for="robot" class="form__label">Я не робот</label>
+      <button type="submit" class="btn form__btn">Купить</button>
+      <p>Ознакомлен с <a href="#">политикой конфиденциальности</a>.</p>
+    </form>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
 
   <!-- Tabs -->
   <script>
